@@ -1,4 +1,4 @@
-package com.java1234.admin;
+package com.java1234.controller.admin;
 
 import com.java1234.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
