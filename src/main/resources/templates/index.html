@@ -1,10 +1,797 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="UTF-8"/>
+<meta name="keywords" content="java在线培训机构，java学习，java视频教程">
+<meta name="description" content="Java1234课堂是高品质的Java视频课程平台。为励志成为Java全栈工程师的程序员们，提供优质的后端技术、前端技术、数据库、服务器视频教程。">
+<link href="/systemImages/favicon.ico" rel="SHORTCUT ICON">
+<title>java1234课堂-专业的java在线教育网</title>
+<link rel="stylesheet" href="/layui/css/layui.css"/>
+<link rel="stylesheet" href="/css/css.css"/>
+<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-index page
+
+<div class="header_top" >
+    <span class="tl">
+        <a href="/"><b>java1234课堂</b></a> - <span>专业的java在线教育网</span>
+    </span>
+    <span class="tr">
+        <span><a  href="/weixinLogin"><img src="/images/weixinlogin.png"/></a></span>&nbsp;&nbsp;
+        <span><a href="/qqLogin"><img src="/images/qqlogin.png"/></a>&nbsp;&nbsp;</span>
+        <b>学Java，上Java1234</b>
+    </span>
+</div>
+
+<div class="header" >
+    <a href="/" class="logo" ></a>
+
+    <ul class="nav">
+        <li><a href="/" style="color:black;font-weight:normal">首页</a></li>
+        <li><a href="/course/list" style="color:black;font-weight:normal">课程</a></li>
+        <li><a href="/article/1" style="color:black;font-weight:bold">Java全栈学习路线图</a></li>
+        <li><a href="/toPayVip" style="color:red;font-weight:bold">VIP会员</a></li>
+        <li><a href="/article/5" style="color:#000000;font-weight:bold">java1234门徒服务</a></li>
+        <li><a href="/article/14" style="color:#e11717;font-weight:bold">关于锋哥</a></li>
+
+    </ul>
+
+    <div class="searchAndLogin">
+        <div class="search d7">
+            <form action="/course/list/1" method="post">
+                <input  type="text" name="s_name" placeholder="搜索从这里开始..." autocomplete="off" value="">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <div class="login">
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="w1220 carousel" >
+    <div class="w1220 carousel">
+        <div class="layui-carousel" id="test10">
+            <div carousel-item="">
+                <div><a href="/course/141" target="_blank"><img src="/carouselImages/20200713125857.jpg"></a></div>
+                <div><a href="/toPayVip" target="_blank"><img src="/carouselImages/20200710085038.png"></a></div>
+                <div><a href="/article/5" target="_blank"><img src="/carouselImages/20200710112256.png"></a></div>
+                <div><a href="/article/1" target="_blank"><img src="/carouselImages/20200710120817.jpg"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w1220 course">
+
+
+    <ul>
+        <h3 class="course_title"><img src="images/item.png"> 好<span></span>课<span></span>推<span></span>荐</h3>
+        <div class="course_item">
+            <a target="_blank" href="/course/141">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200713124705.jpg" alt="springboot在线教育平台视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="springboot在线教育平台视频教程">springboot在线教育平台视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>89085</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/76">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085353.jpg" alt="SSM博客系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SSM博客系统视频教程">SSM博客系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>88953</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/79">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085316.jpg" alt="SpringBoot打造企业级进销存系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringBoot打造企业级进销存系统视频教程">SpringBoot打造企业级进销存系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>345489</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/80">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085304.jpg" alt="SpringBoot打造电影网站视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringBoot打造电影网站视频教程">SpringBoot打造电影网站视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>3443561</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/85">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710084211.jpg" alt="支付宝微信在线支付系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="支付宝微信在线支付系统视频教程">支付宝微信在线支付系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>2032</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/73">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082339.jpg" alt="IDEA视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="IDEA视频教程">IDEA视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>342356</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/68">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082500.jpg" alt="mycat视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="mycat视频教程">mycat视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>66710</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/70">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082425.jpg" alt="docker视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="docker视频教程">docker视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>10039</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/66">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710080657.jpg" alt="GIT视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="GIT视频教程">GIT视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>6718</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a target="_blank" href="/course/77">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085339.jpg" alt="资源分享平台系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="资源分享平台系统视频教程">资源分享平台系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>434360</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </ul>
+
+
+    <ul>
+        <h3 class="course_title"><img src="images/item.png">最<span></span>新<span></span>课<span></span>程</h3>
+        <div class="course_item">
+            <a href="/course/141">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200713124705.jpg" alt="springboot在线教育平台视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="springboot在线教育平台视频教程">springboot在线教育平台视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>89085</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/66">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710080657.jpg" alt="GIT视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="GIT视频教程">GIT视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>6718</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/76">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085353.jpg" alt="SSM博客系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SSM博客系统视频教程">SSM博客系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>88953</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/79">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085316.jpg" alt="SpringBoot打造企业级进销存系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringBoot打造企业级进销存系统视频教程">SpringBoot打造企业级进销存系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>345489</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/81">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085253.jpg" alt="基于Activiti5的学生请假流程系统" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="基于Activiti5的学生请假流程系统">基于Activiti5的学生请假流程系统</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>3243249</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/82">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085240.jpg" alt="SpringMvc+Mybatis客户关系管理系统" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringMvc+Mybatis客户关系管理系统">SpringMvc+Mybatis客户关系管理系统</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>4343246</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/85">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710084211.jpg" alt="支付宝微信在线支付系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="支付宝微信在线支付系统视频教程">支付宝微信在线支付系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>2032</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/67">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082513.jpg" alt="svn视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="svn视频教程">svn视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>8907</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/68">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082500.jpg" alt="mycat视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="mycat视频教程">mycat视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>66710</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/72">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082354.jpg" alt="vue视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="vue视频教程">vue视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>12362</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </ul>
+
+    <ul>
+        <h3 class="course_title"><img src="images/item.png"> 免<span></span>费<span></span>课<span></span>程</h3>
+        <div class="course_item">
+            <a href="/course/66">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710080657.jpg" alt="GIT视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="GIT视频教程">GIT视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>6718</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/67">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082513.jpg" alt="svn视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="svn视频教程">svn视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>8907</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/68">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082500.jpg" alt="mycat视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="mycat视频教程">mycat视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>66710</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/69">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082443.jpg" alt="nginx视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="nginx视频教程">nginx视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>66687</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/70">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082425.jpg" alt="docker视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="docker视频教程">docker视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>10039</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/71">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082409.jpg" alt="es6视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="es6视频教程">es6视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>243236</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/72">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082354.jpg" alt="vue视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="vue视频教程">vue视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>12362</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/73">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082339.jpg" alt="IDEA视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="IDEA视频教程">IDEA视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>342356</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/74">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082325.jpg" alt="微信扫码登录实现基于Java视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="微信扫码登录实现基于Java视频教程">微信扫码登录实现基于Java视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>34577</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/75">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710082250.jpg" alt="QQ第三方登录实现基于Java视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="QQ第三方登录实现基于Java视频教程">QQ第三方登录实现基于Java视频教程</h5>
+                    <p class="word">
+                        <span class="free">免费</span>
+
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>32434</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+
+    </ul>
+
+    <ul>
+        <h3 class="course_title"><img src="images/item.png"> 实<span></span>战<span></span>推<span></span>荐</h3>
+        <div class="course_item">
+            <a href="/course/141">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200713124705.jpg" alt="springboot在线教育平台视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="springboot在线教育平台视频教程">springboot在线教育平台视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>89085</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/76">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085353.jpg" alt="SSM博客系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SSM博客系统视频教程">SSM博客系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>88953</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/77">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085339.jpg" alt="资源分享平台系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="资源分享平台系统视频教程">资源分享平台系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>434360</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/79">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085316.jpg" alt="SpringBoot打造企业级进销存系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringBoot打造企业级进销存系统视频教程">SpringBoot打造企业级进销存系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>345489</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/80">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085304.jpg" alt="SpringBoot打造电影网站视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringBoot打造电影网站视频教程">SpringBoot打造电影网站视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>3443561</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/81">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085253.jpg" alt="基于Activiti5的学生请假流程系统" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="基于Activiti5的学生请假流程系统">基于Activiti5的学生请假流程系统</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>3243249</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/82">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085240.jpg" alt="SpringMvc+Mybatis客户关系管理系统" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="SpringMvc+Mybatis客户关系管理系统">SpringMvc+Mybatis客户关系管理系统</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>4343246</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/83">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085230.jpg" alt="Jsp新闻发布系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="Jsp新闻发布系统视频教程">Jsp新闻发布系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>323260</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/84">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710085219.jpg" alt="Easyui基于角色的权限系统" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="Easyui基于角色的权限系统">Easyui基于角色的权限系统</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>1023</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="course_item">
+            <a href="/course/85">
+                <b class="img">
+                    <img class="lazy" src="/courseImages/20200710084211.jpg" alt="支付宝微信在线支付系统视频教程" style="display: inline;">
+                </b>
+
+                <div class="content">
+                    <h5 title="支付宝微信在线支付系统视频教程">支付宝微信在线支付系统视频教程</h5>
+                    <p class="word">
+
+                        <span class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>2032</l></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+
+    </ul>
+
+
+</div>
+
+
+
+<div class="footer" >
+    <div class="w1220">
+        <div class="footer_left">
+            <div class="footer_left_top">
+                <a href="/article/3">关于我们</a><a href="/article/8">讲师力量</a><a href="/article/9">活动通知</a>
+            </div>
+            <div class="footer_left_middle">
+                <span>联系锋哥 微信：java9568&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ：554605804</span>
+                <span>|</span>
+                <span>&nbsp;Java1234官方25群： 838462530</span>
+            </div>
+            <div class="footer_left_bottom">
+                <span>Copyright ©2012-2020 南通小锋网络科技有限公司 版权所有 Powered by Java1234 苏ICP备13020813</span>
+            </div>
+            <div class="link">
+                <span class="title">友情链接：</span>
+                <span>
+                    <a target="_blank   " href="http://www.java1234.com">Java知识分享网</a><span class="split">|</span>
+                </span><span>
+                    <a target="_blank   " href="http://blog.java1234.com">java1234博客</a>
+                </span>
+            </div>
+        </div>
+        <div class="footer_right">
+            <img src="/systemImages/gzh.jpg">
+            <span>官方公众号</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/layui/layui.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    layui.use(['carousel','element','form','table'], function(){
+        var carousel = layui.carousel;
+
+
+        //图片轮播
+        carousel.render({
+            elem: '#test10'
+            ,width: '1210px'
+            ,height: '440px'
+            ,interval: 5000
+            ,arrow: 'none'
+        });
+
+    });
+
+
+
+
+
+</script>
+
 </body>
 </html>
