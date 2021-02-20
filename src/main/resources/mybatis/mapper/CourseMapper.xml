@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java1234.mapper.CourseMapper">
+
+    <resultMap type="Course" id="CourseResult">
+        <association property="courseType" column="typeId" select="com.java1234.mapper.CourseTypeMapper.findById"></association>
+        <association property="teacher" column="teacherId" select="com.java1234.mapper.TeacherMapper.findById"></association>
+    </resultMap>
+
+    <select id="listHktj"  resultMap="CourseResult">
+        select * from t_course where hktj=true order by sort1 limit 0,10
+    </select>
+
+</mapper>

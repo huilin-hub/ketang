@@ -31,6 +31,7 @@
 
     <ul class="nav">
         <li th:each="menu:${application.menuList}"><a th:href="${menu.url}" th:style="'color:'+${menu.color}+';font-weight:'+${menu.strong==true?'bold':'normal'}" th:text="${menu.name}"></a></li>
+
     </ul>
 
     <div class="searchAndLogin">
@@ -64,162 +65,18 @@
 
     <ul>
         <h3 class="course_title"><img src="images/item.png"> 好<span></span>课<span></span>推<span></span>荐</h3>
-        <div class="course_item">
-            <a target="_blank" href="/course/141">
+        <div class="course_item" th:each="hktj:${application.courseHktjList}">
+            <a target="_blank" th:href="'/course/'+${hktj.id}">
                 <b class="img">
-                    <img class="lazy" src="/courseImages/20200713124705.jpg" alt="springboot在线教育平台视频教程" style="display: inline;">
+                    <img class="lazy" th:src="'/courseImages/'+${hktj.imageName}" th:alt="${hktj.name}" style="display: inline;">
                 </b>
 
                 <div class="content">
-                    <h5 title="springboot在线教育平台视频教程">springboot在线教育平台视频教程</h5>
+                    <h5 th:title="${hktj.name}" th:text="${hktj.name}"></h5>
                     <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>89085</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/76">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710085353.jpg" alt="SSM博客系统视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="SSM博客系统视频教程">SSM博客系统视频教程</h5>
-                    <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>88953</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/79">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710085316.jpg" alt="SpringBoot打造企业级进销存系统视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="SpringBoot打造企业级进销存系统视频教程">SpringBoot打造企业级进销存系统视频教程</h5>
-                    <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>345489</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/80">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710085304.jpg" alt="SpringBoot打造电影网站视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="SpringBoot打造电影网站视频教程">SpringBoot打造电影网站视频教程</h5>
-                    <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>3443561</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/85">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710084211.jpg" alt="支付宝微信在线支付系统视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="支付宝微信在线支付系统视频教程">支付宝微信在线支付系统视频教程</h5>
-                    <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>2032</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/73">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710082339.jpg" alt="IDEA视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="IDEA视频教程">IDEA视频教程</h5>
-                    <p class="word">
-                        <span class="free">免费</span>
-
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>342356</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/68">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710082500.jpg" alt="mycat视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="mycat视频教程">mycat视频教程</h5>
-                    <p class="word">
-                        <span class="free">免费</span>
-
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>66710</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/70">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710082425.jpg" alt="docker视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="docker视频教程">docker视频教程</h5>
-                    <p class="word">
-                        <span class="free">免费</span>
-
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>10039</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/66">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710080657.jpg" alt="GIT视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="GIT视频教程">GIT视频教程</h5>
-                    <p class="word">
-                        <span class="free">免费</span>
-
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>6718</l></span>
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="course_item">
-            <a target="_blank" href="/course/77">
-                <b class="img">
-                    <img class="lazy" src="/courseImages/20200710085339.jpg" alt="资源分享平台系统视频教程" style="display: inline;">
-                </b>
-
-                <div class="content">
-                    <h5 title="资源分享平台系统视频教程">资源分享平台系统视频教程</h5>
-                    <p class="word">
-
-                        <span class="vip">会员</span>
-                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l>434360</l></span>
+                        <span th:if="${hktj.type=='free'}" class="free">免费</span>
+                        <span th:if="${hktj.type=='vip'}" class="vip">会员</span>
+                        <span class="ren"><i class="fa fa-eye"></i>&nbsp;<l th:text="${hktj.view}"></l></span>
                     </p>
                 </div>
             </a>
