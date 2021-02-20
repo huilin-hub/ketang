@@ -1,5 +1,6 @@
 package com.java1234.run;
 
+import com.java1234.service.CarouselArticleService;
 import com.java1234.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -24,6 +25,9 @@ public class StartupRunner implements CommandLineRunner,ServletContextListener {
     @Autowired
     private MenuService menuService;
 
+    @Autowired
+    private CarouselArticleService carouselArticleService;
+
     @Override
     public void run(String... args) throws Exception {
         this.loadData();
@@ -31,6 +35,7 @@ public class StartupRunner implements CommandLineRunner,ServletContextListener {
 
     public void loadData(){
         application.setAttribute("menuList",menuService.list());
+        application.setAttribute("carouselArticleList",carouselArticleService.list());
     }
 
     @Override

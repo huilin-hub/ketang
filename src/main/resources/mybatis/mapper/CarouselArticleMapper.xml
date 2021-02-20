@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java1234.mapper.CarouselArticleMapper">
+
+    <resultMap type="CarouselArticle" id="CarouselArticleResult">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="url" column="url"/>
+        <result property="imageName" column="imageName"/>
+        <result property="sort" column="sort"/>
+    </resultMap>
+
+    <select id="list" resultMap="CarouselArticleResult">
+        select * from t_carousel_article order by sort
+    </select>
+
+</mapper>
